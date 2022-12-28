@@ -1,66 +1,57 @@
-.box-our-team {
+
+.team-container {
     padding-top: 49px;
     padding-bottom: 59px;
+
+    &__subtext {
+        font-size: 20px;
+        line-height: 1.65;
+        text-align: center;
+
+        margin-bottom: 16px;
+    }
+
+    &__heading {
+        font-weight: 300;
+        font-size: 38px;
+        line-height: 1.26;
+        text-align: center;
+
+        margin-bottom: 34px;
+    }
+
+    &__text {
+        font-size: 28px;
+        line-height: 1.55;
+        text-align: center;
+
+        margin-bottom: 45px;
+    }
 }
 
-.team {
-    border-color: var(--main-background);
-}
+
 
 .team-list {
-    display: flex;
+    @include centeredFlex();
     gap: 19px;
     padding-left: 0;
-    justify-content: center;
-    align-items: center;
-}
 
-.team-subtext {
-    font-size: 20px;
-    line-height: 1.65;
-    text-align: center;
-    
-    margin-bottom: 16px;
-}
+    &__name {
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 1.28;
+        text-align: center;
 
-.team-header {
-    font-weight: 300;
-    font-size: 38px;
-    line-height: 1.26;
-    text-align: center;
+        margin-top: 11px;
+    }
 
-    margin-bottom: 34px;
-}
+    &__prof {
+        font-size: 18px;
+        line-height: 1.56;
+        text-align: center;
 
-.team-text {
-    font-size: 28px;
-    line-height: 1.55;
-    text-align: center;
-
-    margin-bottom: 45px;
-}
-
-.team-name {
-    font-weight: 400;
-    font-size: 25px;
-    line-height: 1.28;
-    text-align: center;
-
-    margin-top: 11px;
-}
-
-.team-prof {
-    font-size: 18px;
-    line-height: 1.56;
-    text-align: center;
-
-    margin-top: 12px;
-}
-
-.social-icon {
-    fill: var(--secondary-color);
-
-    transition: fill 250ms var(--time-function);
+        margin-top: 12px;
+    }
 }
 
 .img-thumb {
@@ -68,31 +59,31 @@
 }
 
 .social-list {
+    @include centeredFlex;
     position: absolute;
-    display: flex;
     gap: 25px;
-    justify-content: center;
-    align-items: center;
     padding: 0;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 0;
-
     transition: opacity 250ms var(--time-function);
-}
 
-.img-thumb:hover .social-list {
-    opacity: 1;
-}
+    &__icon {
+        fill: $secondary-color;
+        transition: fill 250ms var(--time-function);
 
-.social-link {
-    display: flex;
-    align-items: center;
+        .social-list__link:hover &, .social-list__link:focus &{
+            fill: $link-hover-focus-color ;
+        }
 
-}
+    }
 
-.social-link:hover .social-icon,
-.social-link:focus .social-icon {
-    fill: var(--link-hover-focus-color);
+    &__link {
+        @include centeredFlex
+    }
+    
+    .img-thumb:hover &{
+        opacity: 1;
+    }
 }
