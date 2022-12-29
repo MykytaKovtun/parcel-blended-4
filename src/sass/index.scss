@@ -1,6 +1,12 @@
+// Base
 @import './base/common';
+
+// Utils
 @import './utils/variables';
 @import './utils/mixins';
+@import './utils/placeholders';
+
+// Components
 @import './components/header';
 @import './components/hero';
 @import './components/features';
