@@ -47,6 +47,11 @@ ul {
     margin-bottom: 0;
 }
 
+ul{
+    list-style: none;
+    padding-left: 0;
+}
+
 li {
     padding-left: 0;
 }
@@ -59,10 +64,6 @@ img {
 
 .visually-hidden {
    @extend %visually-hidden;
-}
-
-.list {
-    list-style: none;
 }
 
 .link {
