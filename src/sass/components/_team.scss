@@ -32,7 +32,7 @@
 
 
 .team-list {
-    @include centeredFlex();
+    @extend %centeredFlex;
     gap: 19px;
     padding-left: 0;
 
@@ -59,7 +59,7 @@
 }
 
 .social-list {
-    @include centeredFlex;
+    @extend %centeredFlex;
     position: absolute;
     gap: 25px;
     padding: 0;
@@ -80,7 +80,7 @@
     }
 
     &__link {
-        @include centeredFlex
+        @extend %centeredFlex;
     }
     
     .img-thumb:hover &{
