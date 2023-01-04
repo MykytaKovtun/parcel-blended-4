@@ -59,13 +59,9 @@
 }
 
 .social-list {
+    @extend %absoluteCentered;
     @extend %centeredFlex;
-    position: absolute;
     gap: 25px;
-    padding: 0;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     opacity: 0;
     transition: opacity 250ms var(--time-function);
 
