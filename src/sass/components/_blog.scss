@@ -1,54 +1,60 @@
 .postone-container {
-    
-    display: flex;
-    flex-direction: row-reverse;
-    color: $main-background;
-    background-color: $second-btn-color;
-  }
-  
-  .postone-description {
-    padding: 112px 44px 113px 30px;
-  }
-  
-  .postone-description__subtitle {
+  display: flex;
+  flex-direction: row-reverse;
+  color: $main-background;
+  background-color: $second-btn-color;
+
+}
+
+.postone-description {
+  padding: 112px 44px 113px 30px;
+
+  &__subtitle {
     margin: 0 0 5px;
     font-size: 20px;
     line-height: 1.65;
     color: $secondary-color;
   }
-  
-  .postone-description__title {
+
+  &__title {
     margin: 0 0 26px;
     font-weight: 300;
     font-size: 38px;
     line-height: 1.26;
     color: $secondary-color;
   }
-  
-  .postone-description__text {
+
+  &__text {
     margin: 0 0 17px;
     font-size: 18px;
     line-height: 1.55;
     color: $secondary-color;
   }
-  
-  .postone-description__button {
+
+  &__button {
     display: inline-block;
     padding: 11px 31px 10px 42px;
     min-width: 196px;
-  
+
     border: 1px solid $main-background;
     border-radius: 5px;
     background-color: $second-btn-color;
     color: $main-background;
     font-size: 18px;
     line-height: 1.55;
-  
+
     cursor: pointer;
     transition: background-color 250ms $time-function;
-    
-    &:hover,&:focus{
-    background-color: $hover-second-btn-color;
+
+    &:hover,
+    &:focus {
+      background-color: $hover-second-btn-color;
+    }
+
   }
-  
 }
+
+
+
+
+
