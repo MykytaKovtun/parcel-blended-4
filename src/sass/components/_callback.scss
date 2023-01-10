@@ -4,11 +4,11 @@
 
 .callback {
     padding: 78px 30px 82px 30px;
-    background-color: var(--first-additional-background);
+    background-color: $first-additional-background;
     &__headline {
             margin-bottom: 34px;
     
-            color: var(--primary-color);
+            color: $primary-color;
             font-weight: 300;
             font-size: 38px;
             line-height: 1.25;
@@ -19,8 +19,8 @@
             padding: 6px 5px 5px 5px;
             margin-bottom: 36px;
         
-            background: var(--main-background);
-            border: 1px solid var(--first-additional-background);
+            background: $main-background;
+            border: 1px solid $first-additional-background;
             border-radius: 0px;
         }
 
@@ -29,16 +29,16 @@
                 padding: 6px 5px 5px 5px;
                 margin-bottom: 60px;
                 
-                background: var(--main-background);
-                border: 1px solid var(--first-additional-background);
+                background: $main-background;
+                border: 1px solid $first-additional-background;
                 border-radius: 0px;
         }
                 
     &__button {
                 display: inline-block;
                 
-                color: var(--secondary-color);
-                background: var(--second-additional-background);
+                color: $secondary-color;
+                background: $second-additional-background;
                 
                 border-color: transparent;
                 border-radius: 5px;
@@ -48,11 +48,13 @@
                 
                 cursor: pointer;
                 transition: background-color 250ms var(--time-function);
+
+        &:hover {
+                background-color: $hover-first-btn-color;
+                }
         }
                 
-    &__button:hover {
-                background-color: var(--hover-first-btn-color);
-        }
+
 }
 
 
