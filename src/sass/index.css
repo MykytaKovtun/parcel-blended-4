@@ -94,7 +94,7 @@ img {
   overflow: hidden;
 }
 
-.social-list__link, .social-list, .team-list, .features__icon-background {
+.footer-list, .social-list__link, .social-list, .team-list, .features__icon-background {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -444,25 +444,22 @@ img {
 }
 
 .footer-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 25px;
   margin-bottom: 10px;
   padding: 0;
 }
-.footer-list--link {
+.footer-list__link {
   display: flex;
   align-items: center;
 }
-.footer-list--link:hover .footer-list--icon, .footer-list--link:focus .footer-list--icon {
+.footer-list__link:hover .footer-list--icon, .footer-list__link:focus .footer-list--icon {
   fill: #28a745;
 }
-.footer-list--icon {
+.footer-list__icon {
   fill: #ffffff;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-list--paragraf {
+.footer-list__paragraf {
   color: #ffffff;
   font-size: 18px;
   line-height: 1.5;

@@ -5,24 +5,22 @@
     background:$footer-background;
   }
   .footer-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend%centeredFlex;
     gap: 25px;
     margin-bottom: 10px;
     padding: 0;
-    &--link{
+    &__link{
       display: flex;
       align-items: center;}
-    &--link:hover .footer-list--icon, 
-    &--link:focus .footer-list--icon{
+    &__link:hover .footer-list--icon, 
+    &__link:focus .footer-list--icon{
       fill:$link-hover-focus-color;
     } 
-    &--icon{
+    &__icon{
       fill:$secondary-color;
     
       transition: fill 250ms $time-function;} 
-    &--paragraf{
+    &__paragraf{
       color:$secondary-color;
       font-size: 18px;
       line-height: 1.5;
