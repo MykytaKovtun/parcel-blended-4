@@ -12,8 +12,8 @@
     &__link{
       display: flex;
       align-items: center;}
-    &__link:hover .footer-list--icon, 
-    &__link:focus .footer-list--icon{
+    &__link:hover .footer-list__icon, 
+    &__link:focus .footer-list__icon{
       fill:$link-hover-focus-color;
     } 
     &__icon{
