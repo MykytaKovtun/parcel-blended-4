@@ -34,8 +34,7 @@
     &__button {
         padding: 10px 30px;
         margin: 0 auto;
-        display: flex;
-        align-items: center;
+        @extend %centeredFlex;
         gap: 5px;
     
         font-family: inherit;
